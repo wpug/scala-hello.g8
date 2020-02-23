@@ -1,8 +1,7 @@
-// The simplest possible sbt build file is just one line:
-
 scalaVersion := "2.13.1"
 // That is, to create a valid sbt build, all you've got to do is define the
 // version of Scala you'd like your project to use.
+scalacOptions := Seq("-unchecked", "-deprecation", "-explaintypes", "-encoding", "utf8")
 
 // ============================================================================
 
@@ -14,3 +13,6 @@ scalaVersion := "2.13.1"
 
 name := "hello-world"
 version := "1.0"
+
+wartremoverErrors ++= Warts.unsafe
+
