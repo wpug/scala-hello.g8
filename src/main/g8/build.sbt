@@ -14,5 +14,6 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-explaintypes", "-encoding",
 name := "hello-world"
 version := "1.0"
 
-wartremoverErrors ++= Warts.unsafe
+// wartremoverErrors ++= Warts.unsafe
+
 
