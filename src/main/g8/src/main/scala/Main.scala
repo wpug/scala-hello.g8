@@ -7,7 +7,7 @@ object Main extends App {
   // deklarujemy i inicjalizujemy zmienną x
   var x = 1
   // drobna próbka „interpolacji” w wypisywanym napisie
-  println(s"Liczby z przedziału [1..$max] to:")
+  println(s"Liczby z przedziału [1..${'max'}] to:")
   // w „pętli” zmieniamy wartość zmiennej aż będzie ona równa „max”
   while (x <= max) {
     println(x)
